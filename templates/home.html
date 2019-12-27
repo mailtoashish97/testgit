@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<form action="{% url 'count' %}">
+    Enter word : <input type="text" name="fulltext" id="">
+    <br><br><input type="submit" value="count!"/>
+</form>
+
+<a href="{% url 'about' %}">about</a>
+{% endblock content %}
+    

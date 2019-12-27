@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<h1> There are {{count}} words </h1>
+
+{% for word,counttotal in worddict  %}
+
+  {{word}}
+  <br>
+  {{counttotal}}
+  <br>
+    
+{% endfor %}
+    
+<h1></h1>
+
+{% endblock content %}
+    
